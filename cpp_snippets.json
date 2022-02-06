@@ -1,0 +1,11 @@
+[
+    {
+        "created": "2022-01-24T14:15:04.341Z",
+        "name": "cpp_code_body",
+        "tags": [
+            "cpp"
+        ],
+        "content": "#include <iostream>\n#include <chrono>\nint main()\n{\n    auto start = std::chrono::high_resolution_clock::now();\n\n    {\n        // Body of the code\n    }\n    auto stop = std::chrono::high_resolution_clock::now();\n        auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);\n    std::cout << \"Time taken by function: \"\n         << (float)duration.count()/1000000000 << \" seconds\" << std::endl;\n    return 0;\n}",
+        "contentType": "cpp"
+    }
+]

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sibi/cpp_learning_udemy_beginner_to_beyond/wordle/src/main.cpp
+iostream
+-
+fstream
+-
+set
+-
+string
+-
+
