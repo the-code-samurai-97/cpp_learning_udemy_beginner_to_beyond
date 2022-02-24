@@ -32,7 +32,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -64,7 +64,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "01_chapter::@bacfb5668ad42b42f091",
-					"jsonFile" : "target-01_chapter-6670ce8318408011f388.json",
+					"jsonFile" : "target-01_chapter-Debug-02cd3653aeb72aa5bd5e.json",
 					"name" : "01_chapter",
 					"projectIndex" : 1
 				}
@@ -80,6 +80,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 1
+		"minor" : 0
 	}
 }

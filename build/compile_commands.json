@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/01_chapter.dir/src/first.cpp.o -c /home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp",
+  "file": "/home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp"
+}
+]

@@ -1,0 +1,3 @@
+/home/sibi/cpp_learning_udemy_beginner_to_beyond/basic_i_o/build/CMakeFiles/rebuild_cache.dir
+/home/sibi/cpp_learning_udemy_beginner_to_beyond/basic_i_o/build/CMakeFiles/edit_cache.dir
+/home/sibi/cpp_learning_udemy_beginner_to_beyond/basic_i_o/build/CMakeFiles/basici_o.dir

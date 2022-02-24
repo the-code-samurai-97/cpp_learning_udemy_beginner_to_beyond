@@ -1,1 +1,1 @@
-/bin/x86_64-linux-gnu-g++-9 CMakeFiles/01_chapter.dir/src/first.cpp.o -o 01_chapter 
+/bin/x86_64-linux-gnu-g++-9  -g   CMakeFiles/01_chapter.dir/src/first.cpp.o  -o 01_chapter 
