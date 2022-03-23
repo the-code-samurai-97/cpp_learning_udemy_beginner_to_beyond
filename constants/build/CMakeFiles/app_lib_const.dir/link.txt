@@ -1,1 +1,2 @@
-/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libapp_lib_const.so -o libapp_lib_const.so CMakeFiles/app_lib_const.dir/src/constants.cpp.o 
+/usr/bin/ar qc libapp_lib_const.a  CMakeFiles/app_lib_const.dir/src/constants.cpp.o
+/usr/bin/ranlib libapp_lib_const.a

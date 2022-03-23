@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/app_lib_const.dir/src/constants.cpp.o"
+  "libapp_lib_const.a"
   "libapp_lib_const.pdb"
-  "libapp_lib_const.so"
 )
 
 # Per-language clean rules from dependency scanning.
