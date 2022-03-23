@@ -42,6 +42,26 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_first_program/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/sibi/cpp_learning_udemy_beginner_to_beyond/build/basic_i_o/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/sibi/cpp_learning_udemy_beginner_to_beyond/build/constants/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/sibi/cpp_learning_udemy_beginner_to_beyond/build/size0f/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

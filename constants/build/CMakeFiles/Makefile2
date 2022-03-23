@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/bu
 
 # The main recursive "all" target.
 all: CMakeFiles/constants.dir/all
+all: CMakeFiles/app_lib_const.dir/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/constants.dir/clean
+clean: CMakeFiles/app_lib_const.dir/clean
 
 .PHONY : clean
 
@@ -74,7 +76,7 @@ clean: CMakeFiles/constants.dir/clean
 CMakeFiles/constants.dir/all:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/depend
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/build/CMakeFiles --progress-num=1,2 "Built target constants"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/build/CMakeFiles --progress-num=3,4 "Built target constants"
 .PHONY : CMakeFiles/constants.dir/all
 
 # Build rule for subdir invocation for target.
@@ -93,6 +95,33 @@ constants: CMakeFiles/constants.dir/rule
 CMakeFiles/constants.dir/clean:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/clean
 .PHONY : CMakeFiles/constants.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/app_lib_const.dir
+
+# All Build rule for target.
+CMakeFiles/app_lib_const.dir/all:
+	$(MAKE) -f CMakeFiles/app_lib_const.dir/build.make CMakeFiles/app_lib_const.dir/depend
+	$(MAKE) -f CMakeFiles/app_lib_const.dir/build.make CMakeFiles/app_lib_const.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/build/CMakeFiles --progress-num=1,2 "Built target app_lib_const"
+.PHONY : CMakeFiles/app_lib_const.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/app_lib_const.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/app_lib_const.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/build/CMakeFiles 0
+.PHONY : CMakeFiles/app_lib_const.dir/rule
+
+# Convenience name for target.
+app_lib_const: CMakeFiles/app_lib_const.dir/rule
+
+.PHONY : app_lib_const
+
+# clean rule for target.
+CMakeFiles/app_lib_const.dir/clean:
+	$(MAKE) -f CMakeFiles/app_lib_const.dir/build.make CMakeFiles/app_lib_const.dir/clean
+.PHONY : CMakeFiles/app_lib_const.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

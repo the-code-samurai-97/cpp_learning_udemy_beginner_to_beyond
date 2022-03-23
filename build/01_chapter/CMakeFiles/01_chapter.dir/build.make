@@ -60,15 +60,15 @@ include 01_chapter/CMakeFiles/01_chapter.dir/flags.make
 01_chapter/CMakeFiles/01_chapter.dir/src/first.cpp.o: 01_chapter/CMakeFiles/01_chapter.dir/flags.make
 01_chapter/CMakeFiles/01_chapter.dir/src/first.cpp.o: ../01_chapter/src/first.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sibi/cpp_learning_udemy_beginner_to_beyond/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object 01_chapter/CMakeFiles/01_chapter.dir/src/first.cpp.o"
-	cd /home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/01_chapter.dir/src/first.cpp.o -c /home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp
+	cd /home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/01_chapter.dir/src/first.cpp.o -c /home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp
 
 01_chapter/CMakeFiles/01_chapter.dir/src/first.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/01_chapter.dir/src/first.cpp.i"
-	cd /home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp > CMakeFiles/01_chapter.dir/src/first.cpp.i
+	cd /home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp > CMakeFiles/01_chapter.dir/src/first.cpp.i
 
 01_chapter/CMakeFiles/01_chapter.dir/src/first.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/01_chapter.dir/src/first.cpp.s"
-	cd /home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp -o CMakeFiles/01_chapter.dir/src/first.cpp.s
+	cd /home/sibi/cpp_learning_udemy_beginner_to_beyond/build/01_chapter && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sibi/cpp_learning_udemy_beginner_to_beyond/01_chapter/src/first.cpp -o CMakeFiles/01_chapter.dir/src/first.cpp.s
 
 # Object files for target 01_chapter
 01_chapter_OBJECTS = \

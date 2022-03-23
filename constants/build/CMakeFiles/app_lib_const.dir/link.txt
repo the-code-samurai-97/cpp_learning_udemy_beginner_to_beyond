@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libapp_lib_const.so -o libapp_lib_const.so CMakeFiles/app_lib_const.dir/src/constants.cpp.o 

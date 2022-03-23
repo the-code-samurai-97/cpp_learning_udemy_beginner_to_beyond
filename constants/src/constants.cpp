@@ -2,7 +2,7 @@
 #include "yaml-cpp/yaml.h"
 // #include <ifstream.h>
 // std::ifstream file = "config.yaml";
-YAML::Node config = YAML::LoadFile(std::string("../src/config.yaml"));
+YAML::Node config = YAML::LoadFile(std::string("config.yaml"));
 int number_of_rooms = config["number_of_rooms"].as<int>();
 int tax1 = config["values"]["tax"].as<int>();
 
@@ -10,7 +10,7 @@ int tax1 = config["values"]["tax"].as<int>();
 
 const float room_price_per_room = 30 ;//dollars
 const float tax = 6; //percent
-int main(){
+int main(int argc,char** argv[]){
     std::cout<<tax1<<"\n";
     std::cout<<"Hello! Welcome to carpet cleaning service"<<std::endl;
     std::cout<<"\nHow many rooms would you like to be cleaned? ";

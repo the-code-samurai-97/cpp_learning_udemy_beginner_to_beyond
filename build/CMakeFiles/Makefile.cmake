@@ -8,10 +8,18 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../01_chapter/CMakeLists.txt"
+  "../01_first_program/CMakeLists.txt"
   "../CMakeLists.txt"
+  "../basic_i_o/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
+  "../constants/CMakeLists.txt"
+  "../size0f/CMakeLists.txt"
+  "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config-version.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-targets-release.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-targets.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -43,9 +51,17 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "01_chapter/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "01_first_program/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "basic_i_o/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "constants/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "size0f/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "01_chapter/CMakeFiles/01_chapter.dir/DependInfo.cmake"
+  "01_first_program/CMakeFiles/01_first_program.dir/DependInfo.cmake"
+  "basic_i_o/CMakeFiles/basici_o.dir/DependInfo.cmake"
+  "constants/CMakeFiles/constants.dir/DependInfo.cmake"
+  "size0f/CMakeFiles/size0f_.dir/DependInfo.cmake"
   )

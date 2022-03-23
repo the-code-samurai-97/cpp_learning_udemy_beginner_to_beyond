@@ -27,6 +27,9 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
+//Configs
+CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release
+
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
@@ -216,7 +219,7 @@ constants_BINARY_DIR:STATIC=/home/sibi/cpp_learning_udemy_beginner_to_beyond/con
 constants_SOURCE_DIR:STATIC=/home/sibi/cpp_learning_udemy_beginner_to_beyond/constants
 
 //The directory containing a CMake configuration file for yaml-cpp.
-yaml-cpp_DIR:PATH=/usr/local/share/cmake/yaml-cpp
+yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
 
 
 ########################

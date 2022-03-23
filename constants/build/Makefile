@@ -56,6 +56,40 @@ CMAKE_BINARY_DIR = /home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/bu
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -66,6 +100,18 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -123,6 +169,19 @@ constants/fast:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/build
 .PHONY : constants/fast
 
+#=============================================================================
+# Target rules for targets named app_lib_const
+
+# Build rule for target.
+app_lib_const: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 app_lib_const
+.PHONY : app_lib_const
+
+# fast build rule for target.
+app_lib_const/fast:
+	$(MAKE) -f CMakeFiles/app_lib_const.dir/build.make CMakeFiles/app_lib_const.dir/build
+.PHONY : app_lib_const/fast
+
 src/constants.o: src/constants.cpp.o
 
 .PHONY : src/constants.o
@@ -130,6 +189,7 @@ src/constants.o: src/constants.cpp.o
 # target to build an object file
 src/constants.cpp.o:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/src/constants.cpp.o
+	$(MAKE) -f CMakeFiles/app_lib_const.dir/build.make CMakeFiles/app_lib_const.dir/src/constants.cpp.o
 .PHONY : src/constants.cpp.o
 
 src/constants.i: src/constants.cpp.i
@@ -139,6 +199,7 @@ src/constants.i: src/constants.cpp.i
 # target to preprocess a source file
 src/constants.cpp.i:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/src/constants.cpp.i
+	$(MAKE) -f CMakeFiles/app_lib_const.dir/build.make CMakeFiles/app_lib_const.dir/src/constants.cpp.i
 .PHONY : src/constants.cpp.i
 
 src/constants.s: src/constants.cpp.s
@@ -148,6 +209,7 @@ src/constants.s: src/constants.cpp.s
 # target to generate assembly for a file
 src/constants.cpp.s:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/src/constants.cpp.s
+	$(MAKE) -f CMakeFiles/app_lib_const.dir/build.make CMakeFiles/app_lib_const.dir/src/constants.cpp.s
 .PHONY : src/constants.cpp.s
 
 # Help Target
@@ -156,9 +218,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... install/local"
 	@echo "... constants"
+	@echo "... edit_cache"
+	@echo "... app_lib_const"
 	@echo "... src/constants.o"
 	@echo "... src/constants.i"
 	@echo "... src/constants.s"

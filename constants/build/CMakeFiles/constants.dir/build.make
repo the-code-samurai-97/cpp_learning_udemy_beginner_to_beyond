@@ -79,7 +79,7 @@ constants_EXTERNAL_OBJECTS =
 
 constants: CMakeFiles/constants.dir/src/constants.cpp.o
 constants: CMakeFiles/constants.dir/build.make
-constants: /usr/local/lib/libyaml-cpp.so.0.7
+constants: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
 constants: CMakeFiles/constants.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sibi/cpp_learning_udemy_beginner_to_beyond/constants/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable constants"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/constants.dir/link.txt --verbose=$(VERBOSE)

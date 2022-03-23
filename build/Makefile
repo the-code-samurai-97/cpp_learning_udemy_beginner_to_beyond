@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,6 +123,58 @@ depend:
 	$(MAKE) -f 01_chapter/CMakeFiles/01_chapter.dir/build.make 01_chapter/CMakeFiles/01_chapter.dir/build
 .PHONY : 01_chapter/fast
 
+#=============================================================================
+# Target rules for targets named 01_first_program
+
+# Build rule for target.
+01_first_program: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 01_first_program
+.PHONY : 01_first_program
+
+# fast build rule for target.
+01_first_program/fast:
+	$(MAKE) -f 01_first_program/CMakeFiles/01_first_program.dir/build.make 01_first_program/CMakeFiles/01_first_program.dir/build
+.PHONY : 01_first_program/fast
+
+#=============================================================================
+# Target rules for targets named basici_o
+
+# Build rule for target.
+basici_o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 basici_o
+.PHONY : basici_o
+
+# fast build rule for target.
+basici_o/fast:
+	$(MAKE) -f basic_i_o/CMakeFiles/basici_o.dir/build.make basic_i_o/CMakeFiles/basici_o.dir/build
+.PHONY : basici_o/fast
+
+#=============================================================================
+# Target rules for targets named constants
+
+# Build rule for target.
+constants: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 constants
+.PHONY : constants
+
+# fast build rule for target.
+constants/fast:
+	$(MAKE) -f constants/CMakeFiles/constants.dir/build.make constants/CMakeFiles/constants.dir/build
+.PHONY : constants/fast
+
+#=============================================================================
+# Target rules for targets named size0f_
+
+# Build rule for target.
+size0f_: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 size0f_
+.PHONY : size0f_
+
+# fast build rule for target.
+size0f_/fast:
+	$(MAKE) -f size0f/CMakeFiles/size0f_.dir/build.make size0f/CMakeFiles/size0f_.dir/build
+.PHONY : size0f_/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +184,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 01_chapter"
+	@echo "... 01_first_program"
+	@echo "... basici_o"
+	@echo "... constants"
+	@echo "... size0f_"
 .PHONY : help
 
 
